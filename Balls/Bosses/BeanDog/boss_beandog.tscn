@@ -341,6 +341,9 @@ text = "SMACKY SMACK SMALL.
 THEN SMACK BIG!
 USE SMACKY AS TEMPLATE FOR MELEE FIGHTERS!"
 
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
+text = "Template"
+
 [node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("6_cup65")
 

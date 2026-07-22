@@ -190,17 +190,17 @@ offset_top = -1.0
 offset_right = 290.0
 offset_bottom = 39.0
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="1" unique_id=1921250255]
 text = "BETA THE BOULDER"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="3" unique_id=794553254]
 text = "Grows in size passively, gaining strength and damage resistance.
 At max size he goes into a rampage!"
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = "DesireDelta"
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(444730092, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(444730092, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("7_q1d0l")
 dict_skin = Dictionary[String, Texture]({
 "Summer": ExtResource("7_5pxsb")

@@ -137,18 +137,18 @@ offset_top = 143.0
 offset_right = 84.0
 offset_bottom = 183.0
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
 text = "SMACKY THE TEMPLATE"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
 text = "SMACKY SMACK SMALL.
 THEN SMACK BIG!
 USE SMACKY AS TEMPLATE FOR MELEE FIGHTERS!"
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = "Template"
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("7_mbmq5")
 
 [node name="SPLASHART" parent="StatsUI/BallStatDisplay/VsSplash" parent_id_path=PackedInt32Array(750446237, 2023632038) index="0" unique_id=2081690940 node_paths=PackedStringArray("splasharts")]

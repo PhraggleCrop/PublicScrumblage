@@ -193,7 +193,7 @@ text = "She prods you with her electrified pitchfork, then charges in for the ki
 Flirting with the demon is strictly prohibited."
 
 [node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
-text = "Techy"
+text = "TechyTechyy"
 
 [node name="Meterbar" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(1948559442, 846234039) index="1" unique_id=368834551]
 metadata/_edit_use_anchors_ = true

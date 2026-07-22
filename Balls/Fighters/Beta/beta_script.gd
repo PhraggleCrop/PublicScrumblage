@@ -36,7 +36,7 @@ func update_scale():
 	aggressive.effect_offset=80*(1+scl*scaler())
 	bonus_damage = 1 * scaler()
 	#sc.set_base_stat("HitProcessor.damage_scale",1.0-0.3*scaler())
-	#$"../StatsUI/BallStatDisplay/BattleBar/DMGREDUCE".text="RESISTANCE: "+str(  int((0.3*scaler())*100)  ) + "%"
+	#$"../StatsUI/BallStatDisplay/Box/BattleBar/DMGREDUCE".text="RESISTANCE: "+str(  int((0.3*scaler())*100)  ) + "%"
 
 	if active:
 		sc.set_base_stat("HitboxDamager.damage",ability_damage)

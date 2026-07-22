@@ -75,7 +75,7 @@ func update_scale():
 		sc.set_base_stat("HitboxDamager.damage", ability_damage)
 	else:
 		sc.set_base_stat("HitboxDamager.damage", base_damage)
-const BALL_BALTMINION = preload("res://Balls/Bosses/Beta_alt/ball_baltminion2.tscn")
+const BALL_BALTMINION = preload("res://Balls/Bosses/Bmation/bmationminion.tscn")
 @onready var health_manager: HealthManager = $"../HealthManager"
 
 func spawn_betaling():
