@@ -9,7 +9,7 @@ var frail_amount: float = 0.0
 @onready var overhealth: TextureProgressBar = $Overhealth
 @onready var health_label:Node=$Healthbar/HealthLabel
 @onready var armor: TextureProgressBar = $Armor
-
+var default_tint_progress:Color=Color("00b88a")
 func _ready() -> void:
 	await get_tree().process_frame
 	health_manager=ball_stat_display.health_manager
@@ -17,6 +17,7 @@ func _ready() -> void:
 	health_manager.overhealth_changed.connect(_update_bars.unbind(1))
 	health_manager.health_changed.connect(health_changed)
 	health_changed(health_manager.health)
+	default_tint_progress=healthbar.tint_progress
 	
 func health_changed(health):
 	
@@ -91,7 +92,7 @@ func health_setted():
 
 func _update_bar_color():
 	if not ball_stat_display.hit_processor.immune:
-		healthbar.tint_progress = Color("00b88a")
+		healthbar.tint_progress = default_tint_progress
 
 	
 func _process(_delta):
