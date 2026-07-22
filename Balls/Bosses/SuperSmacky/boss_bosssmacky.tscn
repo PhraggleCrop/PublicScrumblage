@@ -5,20 +5,20 @@
 [ext_resource type="Script" uid="uid://dmvukno240m73" path="res://Balls/Components/gain_meter_hit.gd" id="3_me5qa"]
 [ext_resource type="Script" uid="uid://cpml5x1thhodd" path="res://Balls/Fighters/hit_processor.gd" id="4_78bn1"]
 [ext_resource type="PackedScene" uid="uid://gfer2umhn1ir" path="res://Balls/Fighters/visuals.tscn" id="5_b80cp"]
-[ext_resource type="Texture2D" uid="uid://dw0riwruy8k8t" path="res://Balls/ModdedFighters/Smacky/Smacky.png" id="6_1ov4v"]
-[ext_resource type="Texture2D" uid="uid://c2ebvqqyg4o1k" path="res://Balls/ModdedFighters/Smacky/Smacky2.png" id="7_3pdg7"]
+[ext_resource type="Texture2D" uid="uid://dw0riwruy8k8t" path="res://Balls/Fighters/Smacky/Smacky.png" id="6_1ov4v"]
+[ext_resource type="Texture2D" uid="uid://c2ebvqqyg4o1k" path="res://Balls/Fighters/Smacky/Smacky2.png" id="7_3pdg7"]
 [ext_resource type="Script" uid="uid://bu31ttkgcaxsv" path="res://Balls/Components/rotater.gd" id="8_ojrl1"]
 [ext_resource type="Script" uid="uid://dd5wyq35xn3dr" path="res://Balls/Components/weapon_holder.gd" id="9_0cdx8"]
 [ext_resource type="Script" uid="uid://7rdo5jcvynat" path="res://Balls/Components/weapon_flipper.gd" id="10_2dgen"]
 [ext_resource type="PackedScene" uid="uid://slgqs2t3kpxh" path="res://Balls/Components/weapon_hitbox.tscn" id="11_bdhx4"]
-[ext_resource type="Texture2D" uid="uid://cfopxrp13yp6o" path="res://Balls/ModdedFighters/Smacky/SmackyBat.png" id="12_jc3a8"]
+[ext_resource type="Texture2D" uid="uid://cfopxrp13yp6o" path="res://Balls/Fighters/Smacky/SmackyBat.png" id="12_jc3a8"]
 [ext_resource type="Script" uid="uid://by7c4oifa333u" path="res://Balls/Components/clash_bouncer.gd" id="13_bladq"]
 [ext_resource type="Script" uid="uid://biq4p8hwljsx4" path="res://Balls/hitbox_damager.gd" id="14_4yq21"]
 [ext_resource type="PackedScene" uid="uid://vtu8ejttgl1p" path="res://Balls/Moods/mood_aggressive.tscn" id="15_rkuq3"]
 [ext_resource type="Script" uid="uid://cyoea1so1sgna" path="res://Balls/health_manager.gd" id="16_wpcqr"]
 [ext_resource type="Script" uid="uid://ccgs4h8pbyba6" path="res://Balls/meter_manager.gd" id="17_815oc"]
 [ext_resource type="PackedScene" uid="uid://cy2eniqmvljtd" path="res://Balls/ball_stat_display.tscn" id="18_jwwlf"]
-[ext_resource type="Texture2D" uid="uid://chilti8qx3lv4" path="res://Balls/ModdedFighters/Smacky/Smacky_VS.png" id="19_1b4i4"]
+[ext_resource type="Texture2D" uid="uid://chilti8qx3lv4" path="res://Balls/Fighters/Smacky/Smacky_VS.png" id="19_1b4i4"]
 [ext_resource type="PackedScene" uid="uid://7meckvgvv1kl" path="res://GameStuff/BossStuff/boss_stat_display.tscn" id="20_vmp87"]
 [ext_resource type="AudioStream" uid="uid://ceky2dm3vurcf" path="res://Balls/Bosses/SuperSmacky/BUBBLE POP SOUND EFFECT - FREE.mp3" id="21_vmp87"]
 [ext_resource type="AudioStream" uid="uid://u5pvobr0vx83" path="res://GameStuff/BossStuff/Sound/alert.wav" id="22_3hhxl"]
@@ -716,18 +716,18 @@ offset_top = 143.0
 offset_right = 84.0
 offset_bottom = 183.0
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
 text = "SMACKY THE TEMPLATE"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
 text = "SMACKY SMACK SMALL.
 THEN SMACK BIG!
 USE SMACKY AS TEMPLATE FOR MELEE FIGHTERS!"
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = "Template"
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("6_1ov4v")
 
 [node name="SPLASHART" parent="StatsUI/BallStatDisplay/VsSplash" parent_id_path=PackedInt32Array(750446237, 2023632038) index="0" unique_id=2081690940 node_paths=PackedStringArray("splasharts")]
@@ -742,7 +742,7 @@ offset_right = 453.0
 texture = ExtResource("19_1b4i4")
 
 [node name="Chart" parent="StatsUI/BallStatDisplay/VsSplash/SPLASHART/AlignmentChart" parent_id_path=PackedInt32Array(750446237, 1935891313) index="0" unique_id=858608945]
-modulate = Color(0.0628623, 0.4927367, 0.79191005, 1)
+modulate = Color(0.06251755, 0.49231514, 0.7922764, 1)
 grid_value = Vector2(-0.99310344, 0.9724138)
 
 [node name="StarPoint" parent="StatsUI/BallStatDisplay/VsSplash/SPLASHART/AlignmentChart" parent_id_path=PackedInt32Array(750446237, 1935891313) index="5" unique_id=2127130666]
@@ -756,13 +756,11 @@ grid_value = Vector2(-0.99310344, 0.9724138)
 modulate = Color(0.50980395, 0.50980395, 0.50980395, 1)
 text = "\"SMACKY\""
 
-[node name="BossDisplay" parent="StatsUI" unique_id=1893175426 node_paths=PackedStringArray("meterbar", "health_chaser") instance=ExtResource("20_vmp87")]
+[node name="BossDisplay" parent="StatsUI" unique_id=1893175426 instance=ExtResource("20_vmp87")]
 offset_left = 164.0
 offset_top = -548.0
 offset_right = 204.0
 offset_bottom = -508.0
-meterbar = NodePath("BattleBar/Meterbar")
-health_chaser = NodePath("BattleBar/Healthbar/HealthChaser")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1994337545]
 
@@ -801,8 +799,8 @@ scale = Vector2(1.5, 1.5)
 
 [node name="BossBanner" type="ColorRect" parent="BANNER/Boss" unique_id=819729864]
 light_mask = 0
-clip_contents = true
 custom_minimum_size = Vector2(1500, 0)
+clip_contents = true
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

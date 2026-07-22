@@ -146,6 +146,9 @@ text = "KATIE THE ENGINEER"
 text = "Places down turrets to help her in combat.
 One shoots, the other heals, and the third smacks!"
 
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
+text = "Katieverse"
+
 [node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(250334219, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("6_qaflo")
 dict_skin = Dictionary[String, Texture]({

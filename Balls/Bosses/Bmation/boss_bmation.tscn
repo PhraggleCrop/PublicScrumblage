@@ -776,10 +776,10 @@ offset_top = -1606.0
 offset_right = 2597.0
 offset_bottom = -1566.0
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="1" unique_id=1921250255]
 text = "THE ABETAMATION"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(444730092, 624450934) index="3" unique_id=794553254]
 offset_top = 179.0
 offset_bottom = 402.0
 text = "A mutant offshoot of the Beta clones.
@@ -787,14 +787,14 @@ Origin for it's creation is unknown.
 
 Note: Keep a watchful eye on subjects for any tampering."
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = ""
 
-[node name="HealthLabel" parent="StatsUI/BallStatDisplay/BattleBar/Healthbar/Healthbar" parent_id_path=PackedInt32Array(444730092, 1875357996) index="0" unique_id=1229604741]
+[node name="HealthLabel" parent="StatsUI/BallStatDisplay/Box/BattleBar/Healthbar/Healthbar" parent_id_path=PackedInt32Array(444730092, 1875357996) index="0" unique_id=1229604741]
 offset_left = 6.0
 offset_right = 128.0
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(444730092, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(444730092, 846234039) index="3" unique_id=1728433949]
 offset_top = -20.0
 offset_bottom = 110.0
 texture = ExtResource("7_t4oes")
@@ -839,17 +839,15 @@ offset_top = -76.0
 offset_bottom = 303.0
 text = "\"GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET BACK GET\""
 
-[node name="BossDisplay" parent="StatsUI" unique_id=750446237 node_paths=PackedStringArray("meterbar", "health_chaser") instance=ExtResource("23_lvkx8")]
+[node name="BossDisplay" parent="StatsUI" unique_id=750446237 instance=ExtResource("23_lvkx8")]
 offset_left = 1150.0
 offset_top = -1104.0
 offset_right = 1190.0
 offset_bottom = -1064.0
 custom_music_override = ExtResource("28_8p1ug")
 custom_music_override_ender = "res://Music/hit it win.mp3"
-meterbar = NodePath("BattleBar/Meterbar")
-health_chaser = NodePath("BattleBar/Healthbar/HealthChaser")
 
-[node name="Description" parent="StatsUI/BossDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1737318353]
+[node name="Description" parent="StatsUI/BossDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1737318353]
 text = "[b]CANCEROUS GROWTH[/b]
 Their size permanently expands in size.
 [b]ROARING RAMPAGE[/b]
@@ -857,20 +855,16 @@ They gain a damage resistance of up to 65% before entering their 3-armed rampage
 [b]DEEP ROT MITOSIS[/b]
 As more of their body falls into disrepair, they spawn more homunculi."
 
-[node name="Healthbar" parent="StatsUI/BossDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="2" unique_id=634706039]
+[node name="Healthbar" parent="StatsUI/BossDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="2" unique_id=634706039]
 offset_left = 15.0
 offset_right = 55.0
 
-[node name="Healthbar" parent="StatsUI/BossDisplay/BattleBar/Healthbar" index="4" unique_id=1875357996]
-offset_left = -5.0
-offset_right = 1453.0
-
-[node name="Name" parent="StatsUI/BossDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1322474825]
+[node name="Name" parent="StatsUI/BossDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1322474825]
 offset_left = 79.0
 offset_right = 694.0
 text = "THE ABETAMATION"
 
-[node name="Icon" parent="StatsUI/BossDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="4" unique_id=735791092]
+[node name="Icon" parent="StatsUI/BossDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="4" unique_id=735791092]
 offset_left = -101.0
 offset_right = 29.0
 scale = Vector2(1.3, 1.3)

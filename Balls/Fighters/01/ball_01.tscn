@@ -284,23 +284,23 @@ offset_right = -83.0
 offset_bottom = 141.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(1663641561, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(1663641561, 624450934) index="1" unique_id=1921250255]
 text = "01 THE ROBOFIGHTER"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(1663641561, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(1663641561, 624450934) index="3" unique_id=794553254]
 text = "Fires aimed bullets from his arm.
 Overtime he stores energy and releases it into an energy beam."
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = "MaxOKE"
 
-[node name="Meterbar" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="1" unique_id=368834551]
+[node name="Meterbar" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="1" unique_id=368834551]
 metadata/_edit_use_anchors_ = true
 
-[node name="Healthbar" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="2" unique_id=634706039]
+[node name="Healthbar" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="2" unique_id=634706039]
 metadata/_edit_use_anchors_ = true
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(1663641561, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("6_jj262")
 dict_skin = Dictionary[String, Texture]({
 "Summer": ExtResource("9_j35w1")

@@ -19,7 +19,7 @@ func _ready():
 		$"../Rotater/WeaponHolder/WeaponFlipper/WeaponHitbox/WeaponVisual/Weapon".texture=load("res://Balls/Fighters/01/01gunsummer.png")
 		$"../StatsUI/BallStatDisplay/VsSplash/SPLASHART/TextureRect".visible=false
 		$"../StatsUI/BallStatDisplay/VsSplash/SPLASHART/SummerRect".visible=true
-		$"../StatsUI/BallStatDisplay/BattleBar/Icon".texture=load("res://Balls/Fighters/01/01ballsummer1.png")
+		$"../StatsUI/BallStatDisplay/Box/BattleBar/Icon".texture=load("res://Balls/Fighters/01/01ballsummer1.png")
 		
 		
 	lazer_area.visible=false

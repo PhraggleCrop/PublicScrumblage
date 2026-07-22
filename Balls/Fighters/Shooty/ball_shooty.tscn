@@ -150,24 +150,26 @@ offset_top = 143.0
 offset_right = 84.0
 offset_bottom = 183.0
 
-[node name="Name" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
+[node name="Name" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="1" unique_id=1921250255]
 text = "SHOOTY THE TEMPLATE"
 
-[node name="Description" parent="StatsUI/BallStatDisplay/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
+[node name="Description" parent="StatsUI/BallStatDisplay/Box/DescriptionBox" parent_id_path=PackedInt32Array(750446237, 624450934) index="3" unique_id=794553254]
 text = "SHOOTY SHOOTS A SMALL BULLET,
 THEN SHOOTS A BIG BULLET!!!
 USE SHOOTY AS TEMPLATE FOR PROJECTILE FIGHTERS!"
 
-[node name="Credit" parent="StatsUI/BallStatDisplay/DescriptionBox/Description" index="0" unique_id=522021847]
+[node name="Credit" parent="StatsUI/BallStatDisplay/Box/DescriptionBox/Description" index="0" unique_id=522021847]
 text = "Template"
 
-[node name="Icon" parent="StatsUI/BallStatDisplay/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
+[node name="Icon" parent="StatsUI/BallStatDisplay/Box/BattleBar" parent_id_path=PackedInt32Array(750446237, 846234039) index="3" unique_id=1728433949]
 texture = ExtResource("7_trp8n")
 
 [node name="SPLASHART" parent="StatsUI/BallStatDisplay/VsSplash" parent_id_path=PackedInt32Array(750446237, 2023632038) index="0" unique_id=2081690940 node_paths=PackedStringArray("splasharts")]
 name_sound = ExtResource("19_rhw7t")
 name_text = "SHOOTY"
-splasharts = {}
+splasharts = {
+"Default": NodePath("TextureRect")
+}
 
 [node name="TextureRect" parent="StatsUI/BallStatDisplay/VsSplash/SPLASHART" index="0" unique_id=1997730014]
 offset_left = -547.0

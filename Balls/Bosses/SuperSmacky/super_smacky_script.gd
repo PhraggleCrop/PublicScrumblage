@@ -1,4 +1,4 @@
-extends "res://Balls/ModdedFighters/Smacky/smacky_script.gd"
+extends "res://Balls/Fighters/Smacky/smacky_script.gd"
 # this is just to show what the differences between a boss and normal ball is
 
 @onready var super_smacky_ball: BallBodyBase = $".."
