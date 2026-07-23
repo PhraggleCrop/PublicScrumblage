@@ -145,4 +145,5 @@ func _physics_process(delta):
 	var dir = Global.dir_closest_ball(ball)
 	if dir == Vector2.ZERO:
 		dir = Vector2.RIGHT.rotated(rotater.rotation)
-	vision_rotater.rotation=lerp_angle(vision_rotater.rotation,dir.angle(),0.045)
+	vision_rotater.rotation=lerp_angle(vision_rotater.rotation,dir.angle(),seek_strength)
+var seek_strength = 0.045

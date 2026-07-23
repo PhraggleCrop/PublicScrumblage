@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://cj1r5h66i6jx3"]
 
 [ext_resource type="Script" uid="uid://ctmonysa1h70t" path="res://GameStuff/main_ffa.gd" id="1_knffn"]
+[ext_resource type="PackedScene" uid="uid://dr2ifuygynu0a" path="res://Balls/Fighters/Hong/Super/super_hong.tscn" id="2_rsqdb"]
+[ext_resource type="PackedScene" uid="uid://drnn8fsio3sux" path="res://Balls/Fighters/Mandalyn/super_mandalyn.tscn" id="3_coeju"]
+[ext_resource type="PackedScene" uid="uid://dl8e8ysyow6m" path="res://Balls/Fighters/Somnia/sup_form/super_somnia.tscn" id="4_hvge6"]
 [ext_resource type="Script" uid="uid://b4yamxnewh71l" path="res://GameStuff/confetti_cannon.gd" id="4_knffn"]
 [ext_resource type="PackedScene" uid="uid://npp6cmnmok3k" path="res://GameStuff/Confetti.tscn" id="5_gm154"]
+[ext_resource type="PackedScene" uid="uid://o8gexn2rhpbr" path="res://Balls/Fighters/Jane/Super/super_jane.tscn" id="5_rsqdb"]
 [ext_resource type="Script" uid="uid://b8q822wn0j3s8" path="res://GameStuff/match_looper.gd" id="6_0kwm5"]
 [ext_resource type="Script" uid="uid://ff260b1xf73s" path="res://GameStuff/damage_recorder.gd" id="6_coeju"]
 [ext_resource type="Texture2D" uid="uid://dk578adhassu0" path="res://Assets/Grid.png" id="7_o3q2s"]
@@ -48,6 +52,10 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="MainFFA" type="Node2D" unique_id=2110299460 groups=["Arena"]]
 script = ExtResource("1_knffn")
+ball3_res = ExtResource("2_rsqdb")
+ball4_res = ExtResource("3_coeju")
+ball1_res = ExtResource("4_hvge6")
+ball2_res = ExtResource("5_rsqdb")
 
 [node name="DamageRecorder" type="Node" parent="." unique_id=1564526608]
 script = ExtResource("6_coeju")
