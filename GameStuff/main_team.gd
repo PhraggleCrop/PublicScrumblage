@@ -220,7 +220,8 @@ func setup_quotes():
 		$WinQuoteRight.add_child(team_quote)
 		team_quote.position-=team_quote.size/2.0
 		quotes.append(team_quote)
-
+	else:
+		quotes.append(null)
 	## Team 2 quote
 	if team2_is_solo():
 		var solo_quotes = get_tree().get_nodes_in_group("WinQuote")
@@ -236,6 +237,8 @@ func setup_quotes():
 		$WinQuoteLeft.add_child(team_quote)
 		team_quote.position-=team_quote.size/2.0
 		quotes.append(team_quote)
+	else:
+		quotes.append(null)
 
 func _build_team_quote(data: Dictionary) -> MarginContainer:
 	var team_quote: MarginContainer = WIN_BUBBLE_TEAM.instantiate()
@@ -414,11 +417,11 @@ func winner_display():
 	if winner == null:
 		audio_stream_player.stream = TIE
 		audio_stream_player.play()
-
+	
 	elif is_p1_winner(winner):
 		$VS/Left.visible = true
 
-		if quotes.size() > 0:
+		if quotes.get(0)!=null:
 			quotes[0].fade_in()
 
 		var tween = get_tree().create_tween()
@@ -432,7 +435,7 @@ func winner_display():
 	elif is_p2_winner(winner):
 		$VS/Right.visible = true
 
-		if quotes.size() > 1:
+		if quotes.get(1)!=null:
 			quotes[1].fade_in()
 
 		var tween = get_tree().create_tween()
