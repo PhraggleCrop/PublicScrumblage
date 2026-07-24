@@ -1,5 +1,5 @@
 extends BehaviourScript
-@onready var hit_processor = $"../HitProcessor"
+
 @onready var fire_hitbox = $"../Scaler/FireHitbox"
 signal connected
 var fb_dmg=3

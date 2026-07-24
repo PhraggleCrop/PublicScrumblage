@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://ckpfcnw0bipfi" path="res://Balls/Fighters/Ball.gd" id="1_a6yvj"]
 [ext_resource type="PackedScene" uid="uid://gfer2umhn1ir" path="res://Balls/Fighters/visuals.tscn" id="2_h5fq0"]
 [ext_resource type="Texture2D" uid="uid://djnvvs2xa3t0k" path="res://Balls/Fighters/Shooty/ShootyBulletTeam.png" id="3_ef0yv"]
-[ext_resource type="Script" uid="uid://cpml5x1thhodd" path="res://Balls/Fighters/hit_processor.gd" id="3_yqq4m"]
 [ext_resource type="Texture2D" uid="uid://d1bkux8llevkc" path="res://Balls/Fighters/Shooty/ShootyBullet.png" id="4_emooo"]
 [ext_resource type="Script" uid="uid://dpcmuxl1vimha" path="res://Balls/Fighters/Shooty/bullet_script.gd" id="6_niy6c"]
 [ext_resource type="Script" uid="uid://dwigm6aau4fax" path="res://Balls/Components/scaler.gd" id="7_nfhur"]
@@ -65,10 +64,6 @@ min_speed = 0.0
 
 [node name="BulletScript" type="Node" parent="." unique_id=1538254061]
 script = ExtResource("6_niy6c")
-
-[node name="HitProcessor" type="Node" parent="." unique_id=2121608133 node_paths=PackedStringArray("ball")]
-script = ExtResource("3_yqq4m")
-ball = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1941496462]
 shape = SubResource("CircleShape2D_75wk7")

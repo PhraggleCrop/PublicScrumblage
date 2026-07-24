@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://ckpfcnw0bipfi" path="res://Balls/Fighters/Ball.gd" id="1_v62of"]
 [ext_resource type="PackedScene" uid="uid://gfer2umhn1ir" path="res://Balls/Fighters/visuals.tscn" id="2_hiem3"]
 [ext_resource type="Script" uid="uid://bce3kf2vdryh0" path="res://Balls/Fighters/01/Bullet01_script.gd" id="2_ok6m1"]
-[ext_resource type="Script" uid="uid://cpml5x1thhodd" path="res://Balls/Fighters/hit_processor.gd" id="3_b48wt"]
 [ext_resource type="Script" uid="uid://dmvukno240m73" path="res://Balls/Components/gain_meter_hit.gd" id="3_gpmom"]
 [ext_resource type="PackedScene" uid="uid://slgqs2t3kpxh" path="res://Balls/Components/weapon_hitbox.tscn" id="4_hovgp"]
 [ext_resource type="Texture2D" uid="uid://c25nsl7ahina6" path="res://Assets/326-3268104_clip-art-black-and-white-download-cannon-ball-clipart-circle.png" id="5_ok6m1"]
@@ -56,10 +55,6 @@ script = ExtResource("2_ok6m1")
 [node name="HitGain" type="Node" parent="BulletScript" unique_id=372844731]
 script = ExtResource("3_gpmom")
 multiplier = 1.625
-
-[node name="HitProcessor" type="Node" parent="." unique_id=1927716163 node_paths=PackedStringArray("ball")]
-script = ExtResource("3_b48wt")
-ball = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1968843281]
 shape = SubResource("CircleShape2D_75wk7")

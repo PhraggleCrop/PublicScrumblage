@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://ckpfcnw0bipfi" path="res://Balls/Fighters/Ball.gd" id="1_d2ti1"]
 [ext_resource type="PackedScene" uid="uid://slgqs2t3kpxh" path="res://Balls/Components/weapon_hitbox.tscn" id="1_pe4xr"]
 [ext_resource type="Script" uid="uid://6rr6yeb14mw7" path="res://Balls/Fighters/Hiro/Fireball_script.gd" id="2_6em01"]
-[ext_resource type="Script" uid="uid://cpml5x1thhodd" path="res://Balls/Fighters/hit_processor.gd" id="2_av7es"]
 [ext_resource type="Texture2D" uid="uid://csm7rkb1yndi" path="res://Assets/circle.png" id="6_0n3pp"]
 [ext_resource type="Script" uid="uid://biq4p8hwljsx4" path="res://Balls/hitbox_damager.gd" id="6_6em01"]
 [ext_resource type="Script" uid="uid://pa65lb3d0lpg" path="res://Balls/Components/team_color.gd" id="7_0n3pp"]
@@ -81,10 +80,6 @@ process_material = SubResource("ParticleProcessMaterial_0n3pp")
 
 [node name="FireballScript" type="Node" parent="." unique_id=1793087243]
 script = ExtResource("2_6em01")
-
-[node name="HitProcessor" type="Node" parent="." unique_id=996111440 node_paths=PackedStringArray("ball")]
-script = ExtResource("2_av7es")
-ball = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=928203522]
 shape = SubResource("CircleShape2D_75wk7")

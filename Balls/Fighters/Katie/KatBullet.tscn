@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ckpfcnw0bipfi" path="res://Balls/Fighters/Ball.gd" id="1_oqd6i"]
 [ext_resource type="Script" uid="uid://g40uhj8s70ym" path="res://Balls/Fighters/Katie/bullet_script.gd" id="2_6jqc4"]
-[ext_resource type="Script" uid="uid://cpml5x1thhodd" path="res://Balls/Fighters/hit_processor.gd" id="3_dngjb"]
 [ext_resource type="PackedScene" uid="uid://slgqs2t3kpxh" path="res://Balls/Components/weapon_hitbox.tscn" id="4_8seh5"]
 [ext_resource type="PackedScene" uid="uid://gfer2umhn1ir" path="res://Balls/Fighters/visuals.tscn" id="4_8serr"]
 [ext_resource type="Texture2D" uid="uid://lva5qer3rily" path="res://Balls/Fighters/Katie/whitebullet.png" id="5_8serr"]
@@ -42,10 +41,6 @@ wall_collide = false
 
 [node name="BulletScript" type="Node" parent="." unique_id=1538254061]
 script = ExtResource("2_6jqc4")
-
-[node name="HitProcessor" type="Node" parent="." unique_id=2121608133 node_paths=PackedStringArray("ball")]
-script = ExtResource("3_dngjb")
-ball = NodePath("..")
 
 [node name="Visuals" parent="." unique_id=487229136 node_paths=PackedStringArray("ball") instance=ExtResource("4_8serr")]
 ball = NodePath("..")
