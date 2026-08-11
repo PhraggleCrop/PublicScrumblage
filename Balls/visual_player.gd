@@ -41,7 +41,7 @@ func hurt_visual(data):
 				if data["DAMAGE"]==0:
 					continue
 				else:
-					play("Hurt")
+					play("HurtFlash")
 				
 				
 	current_visual.emit("Hurt")
