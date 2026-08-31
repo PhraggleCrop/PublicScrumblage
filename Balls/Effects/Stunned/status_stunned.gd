@@ -17,6 +17,9 @@ func update_scale():
 	
 func set_target(ball,value,data):
 	super(ball,value,data)
+	if !ball:
+		queue_free()
+		return
 	update_scale()
 	if data.get("SFXMUTE",false)==false:
 		SoundQueue.play("res://Sounds/knockedout.wav")
