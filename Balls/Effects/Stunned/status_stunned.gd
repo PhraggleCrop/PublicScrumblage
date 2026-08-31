@@ -16,6 +16,9 @@ func update_scale():
 		cpu_particles_2d.scale = Vector2(1,1)*baller.stat_controller.get_stat("Ball.ball_scale")
 	
 func set_target(ball,value,data):
+	if !ball:
+		queue_free()
+		return
 	super(ball,value,data)
 	update_scale()
 	if data.get("SFXMUTE",false)==false:
