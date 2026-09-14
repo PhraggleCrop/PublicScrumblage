@@ -28,6 +28,8 @@ var prefreeze_a_velocity: float
 ## If cleaving, increase or decrease speed by this amount
 @export var cleave_boost:float=0
 
+@export var cleave_cap:float=14
+
 ## Aiming flag overrides base behaviour, makes rotater aim at nearest enemy
 @export var aiming: bool = false
 @export_enum( "Nearest To Self","Closest To Direction") var aim_mode: String = "Nearest To Self"
@@ -94,7 +96,7 @@ func connect_signals():
 		stat_controller.add_alias(stat_name + ".flipper_min", "Rotater.flipper_min")
 	
 func boost_cleave():
-	angular_velocity = sign(angular_velocity)*max(abs(angular_velocity)+cleave_boost,0)
+	angular_velocity = sign(angular_velocity)*min(max(abs(angular_velocity)+cleave_boost,0),cleave_cap)
 	
 func update_stats(stat, new_val):
 	if !sync_stats:
@@ -158,10 +160,16 @@ func flipper():
 func _physics_process(delta):
 	if ball.freezed:
 		return
+	
 	if locked or HitstopManager.hitstopped:
 		return
-
-	if aiming:
+		
+	
+	var can_aim = aiming
+	if ball.behaviour_script:
+			if ball.behaviour_script.behaviour_active==false:
+				can_aim=false
+	if can_aim:
 		var dir 
 		if aim_mode=="Nearest To Self":
 			dir = Global.dir_closest_ball(ball)

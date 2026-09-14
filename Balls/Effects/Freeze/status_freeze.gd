@@ -41,7 +41,7 @@ func freeze():
 	baller.stat_controller.add_modifier("Ball.dodge_rate", 1, 0.0, "FREEZED")
 	baller.stat_controller.add_modifier("Ball.bounce_speed_boost", 2, 0, "FREEZED")
 	baller.stat_controller.add_modifier("Ball.dodge_rate", 2, 0, "FREEZED")
-
+	baller.stat_controller.add_modifier("Rotater.aiming",2,false,"FREEZED")
 func _process(delta):
 	if is_instance_valid(baller):
 		icecube.global_position = baller.global_position

@@ -473,8 +473,8 @@ func _on_body_entered(body):
 	if freezed or HitstopManager.hitstopped:
 		return
 	## On the instant we spawn, ignore collision checks
-	if Time.get_ticks_msec()-time_spawned<5:
-		return
+	#if Time.get_ticks_msec()-time_spawned<5:
+	#	return
 	if body is StaticBody2D:
 		bounce.emit()
 		bounce_wall.emit(body)

@@ -79,7 +79,9 @@ func stuncheck(data):
 	baller.stat_controller.add_modifier("Rotater.angular_velocity",2,0.1,"STUNSTOP"+str(stun_id_local))
 	baller.stat_controller.add_modifier("Ball.dodge_rate",2,0,"STUNSTOP"+str(stun_id_local))
 	baller.stat_controller.add_modifier("Hitbox.collision_disabled",2,true,"STUNSTOP"+str(stun_id_local))
+	baller.stat_controller.add_modifier("Rotater.aiming",2,false,"STUNSTOP")
 	mod_list.append("STUNSTOP"+str(stun_id_local))
+	
 	await STimer.delay(0.15+0.1*strength)
 	if is_instance_valid(baller):
 		baller.stat_controller.remove_modifier("STUNSTOP"+str(stun_id_local))
