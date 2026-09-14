@@ -81,7 +81,7 @@ const BALL_BALTMINION = preload("res://Balls/Bosses/Bmation/bmationminion.tscn")
 func spawn_betaling():
 	if health_manager.health<350:
 		var thing=spawn_thing(BALL_BALTMINION)
-		SoundQueue.play("res://Balls/Bosses/Beta_alt/big-burp-bass_F_minor.wav",0.7,0.7)
+		SoundQueue.play("res://Balls/Bosses/Bmation/big-burp-bass_F_minor.wav",0.7,0.7)
 	if health_manager.health<100:
 		$looper.added_rand_time=3.0
 
@@ -117,7 +117,7 @@ var runthrough=true
 func ability():
 	if active==false:
 		ability_start_s.emit()
-		SoundQueue.play("res://Balls/Bosses/Beta_alt/beta raor.wav")
+		SoundQueue.play("res://Balls/Bosses/Bmation/beta raor.wav")
 		if runthrough:
 			ball.bouncable=false
 		default.set_visual("Rampage")
