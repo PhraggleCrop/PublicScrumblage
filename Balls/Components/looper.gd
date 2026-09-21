@@ -34,3 +34,5 @@ func set_delay(val):
 	delay_time=val
 	target_time=(delay_time+randf()*added_rand_time)
 	
+func progress_scale():
+	return timer/target_time

@@ -3,6 +3,7 @@
 extends Node
 @onready var behaviour_script:BehaviourScript=get_parent()
 
+@export var invert:bool=false
 ## Disable/enable the behaviour
 @export var enabled:bool=true
 
@@ -10,6 +11,7 @@ extends Node
 @export var multiplier:float =1.0
 @export var meter_manager:MeterManager
 signal gained
+signal lost
 func _ready():
 	EventManager._successfully_damaged_.connect(hit_process)
 
@@ -19,7 +21,10 @@ func hit_process(data):
 	var victim = data["VICTIM"]
 	var dmg = data["DAMAGE"]
 	if victim==behaviour_script.ball:
-		meter_manager.gain_meter(dmg*multiplier)
-	
-		gained.emit(meter_manager.meter)
+		if invert:
+			meter_manager.lose_meter(dmg*multiplier)
+			lost.emit(dmg*multiplier)
+		else:
+			meter_manager.gain_meter(dmg*multiplier)
+			gained.emit(dmg*multiplier)
 	

@@ -42,7 +42,7 @@ func explode():
 	SoundQueue.play("res://Assets/deltarune explosion.mp3")
 	gpu_particles_2d.emitting=false
 	
-	EventManager.hit.emit({"ATTACKER":ball_source,"VICTIM":baller,"TYPE":["STATUS_EFFECT"],"CRIT_CHANCE":1,"CRIT_MULTIPLIER":1,"DAMAGE":counter,"HITSTOP_SCALE":0.5,
+	EventManager.hit.emit({"ATTACKER":ball_source.get_root_creator(),"VICTIM":baller,"TYPE":["STATUS_EFFECT"],"CRIT_CHANCE":1,"CRIT_MULTIPLIER":1,"DAMAGE":counter,"HITSTOP_SCALE":0.5,
 	"ID":"STATUS_BURNING"})
 	
 	

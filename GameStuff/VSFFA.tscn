@@ -35,16 +35,16 @@ transform = Transform2D(1, 0, 0, 1, 650, 650)
 script = ExtResource("1_661yc")
 
 [node name="VsSpawn1" type="Marker2D" parent="." unique_id=350955716]
-position = Vector2(-316, -318)
+position = Vector2(-323, -376)
 
 [node name="VsSpawn2" type="Marker2D" parent="." unique_id=249336043]
-position = Vector2(-389, 207)
+position = Vector2(-396, 207)
 
 [node name="VsSpawn1b" type="Marker2D" parent="." unique_id=290432885]
-position = Vector2(296, -318)
+position = Vector2(303, -243)
 
 [node name="VsSpawn2b" type="Marker2D" parent="." unique_id=2004906439]
-position = Vector2(316, 210)
+position = Vector2(316, 335)
 
 [node name="Left" type="Node2D" parent="." unique_id=1618711971]
 position = Vector2(-676, -456)
