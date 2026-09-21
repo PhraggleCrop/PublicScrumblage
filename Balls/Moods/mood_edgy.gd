@@ -17,6 +17,7 @@ func behaviour():
 	
 	ball.set_velocity( -dir_to_center * speed)
 
+	behaviour_occured.emit()
 	PopUpManager.emote_effect(ball,resource,scaled_offset())
 
 func scaled_offset():

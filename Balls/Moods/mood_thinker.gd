@@ -16,3 +16,4 @@ func behaviour():
 	ball.set_velocity( speed)
 
 	PopUpManager.emote_effect(ball,resource,scaled_offset())
+	behaviour_occured.emit()

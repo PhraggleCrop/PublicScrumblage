@@ -27,3 +27,5 @@ func behaviour():
 		if dir == Vector2.ZERO:
 			return
 		ball.set_velocity(-dir*(ball.get_velocity().length()+45))
+	
+	behaviour_occured.emit()

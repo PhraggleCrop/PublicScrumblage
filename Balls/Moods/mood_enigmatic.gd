@@ -16,6 +16,7 @@ func behaviour():
 
 	spawn_poof(start)
 	spawn_poof(exit_position)
+	behaviour_occured.emit()
 
 	ball.global_position = exit_position
 	SoundQueue.play("res://Assets/tboi-repentance-sound-teleport-uc-0-azw.wav", 1, 0.7)

@@ -13,6 +13,7 @@ var trigger_time
 var tracktime
 
 signal trigger_behaviour
+signal behaviour_occured
 signal emote_signal
 
 func _enter_tree():
