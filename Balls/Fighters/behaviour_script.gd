@@ -115,3 +115,11 @@ signal spawn_list_updated
 func clear_list():
 	for i in delete_list:
 		i.destruction()
+
+
+
+func utility_sfx(path:String):
+	SoundQueue.play(path)
+
+func utility_quake(strength:float):
+	Global.quake_trigger.emit(strength)
