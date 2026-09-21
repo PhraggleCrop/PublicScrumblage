@@ -122,7 +122,7 @@ func start_music():
 	match Global.skin_mode:
 		"Summer":
 			MusicManager.play_music(load("res://Music/Beach Where OCs Go to Ball Lab.mp3"), 1.0, true)
-		"Default":
+		_:
 			MusicManager.play_music(load("res://Music/hit it.mp3"), 1.0, true)
 		
 func win_stinger():
@@ -132,7 +132,7 @@ func win_stinger():
 	match Global.skin_mode:
 		"Summer":
 			SoundQueue.play("res://Music/Beach Where OCs Go to WIN.mp3", 1.0, 0.25)
-		"Default":
+		_:
 			SoundQueue.play("res://Music/hit it win.mp3",1,0.7)
 		
 
