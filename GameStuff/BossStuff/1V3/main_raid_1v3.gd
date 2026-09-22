@@ -372,11 +372,20 @@ func setup_stats():
 	var counter := 0
 	var boss_stats
 	var bstats= get_tree().get_nodes_in_group("BStats")
-	var boss = get_tree().get_first_node_in_group("BossStat").box.get_node("DescriptionBox")
+	
+	if !p2.get("BALL").get_node("StatsUI/BossDisplay"):
+		print("not found")
+		var temp = load("res://GameStuff/BossStuff/boss_stat_display.tscn").instantiate()
+		p2.get("BALL").get_node("StatsUI").add_child(temp)
+	else:
+		print("BossDisplay found")
+	
+	var boss = p2.get("BALL").get_node("StatsUI/BossDisplay/Box/DescriptionBox")
+		
 	for i in bstats:
 		i.box.get_node("DescriptionBox").visible = false
 		
-	boss_stats=get_tree().get_first_node_in_group("BossStat")
+	boss_stats=p2.get("BALL").get_node("StatsUI/BossDisplay")
 	
 	if boss_stats:
 		if boss_stats.custom_music_override:
