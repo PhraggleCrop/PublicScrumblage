@@ -275,9 +275,7 @@ position = Vector2(1038, 659)
 
 [node name="VS" parent="." unique_id=17376053 instance=ExtResource("11_8sfp1")]
 offset = Vector2(650, 650)
-scale = Vector2(1.1, 1.1)
-transform = Transform2D(1.1, 0, 0, 1.1, 650, 650)
-follow_viewport_enabled = true
+transform = Transform2D(1, 0, 0, 1, 650, 650)
 
 [node name="SplashName" parent="VS/Left" parent_id_path=PackedInt32Array(17376053, 227121065) index="1" unique_id=135383489]
 text = "TEAMONE"
