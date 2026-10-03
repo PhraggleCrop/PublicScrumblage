@@ -79,6 +79,7 @@ func _ready():
 		if child is CustomDeathAnimation:
 			child.ball = ball
 			has_custom_death = true
+			custom_death.connect(child._on_death)
 
 var decay_val=0
 
