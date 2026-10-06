@@ -35,10 +35,10 @@ const WIN_BUBBLE_TEAM = preload("uid://bg42ux7vs0uyj")
 
 # Returns true if a team has only one character
 func team1_is_solo() -> bool:
-	return ball1a_res != null and ball1b_res == null
+	return (ball1a_res != null and ball1b_res == null) or (ball1a_res == null and ball1b_res != null)
 
 func team2_is_solo() -> bool:
-	return ball2a_res != null and ball2b_res == null
+	return (ball2a_res != null and ball2b_res == null) or (ball2a_res == null and ball2b_res != null)
 
 
 func _ready():
@@ -458,7 +458,7 @@ func winner_display():
 
 
 func is_p1_winner(winner):
-	return winner == p1a.get("BALL") or (not team1_is_solo() and winner == p1b.get("BALL"))
+	return (winner == p1a.get("BALL") or (not team1_is_solo() and winner == p1b.get("BALL"))) or winner == p1b.get("BALL")
 
 func is_p2_winner(winner):
-	return winner == p2a.get("BALL") or (not team2_is_solo() and winner == p2b.get("BALL"))
+	return (winner == p2a.get("BALL") or (not team2_is_solo() and winner == p2b.get("BALL"))) or winner == p2b.get("BALL")

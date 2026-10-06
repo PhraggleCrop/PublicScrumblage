@@ -94,9 +94,9 @@ texture = SubResource("GradientTexture2D_yaehf")
 
 [node name="SplashName" type="Label" parent="Left" unique_id=79025752]
 light_mask = 0
-offset_left = 27.5
+offset_left = 25.0
 offset_top = -191.0
-offset_right = 78.5
+offset_right = 76.0
 offset_bottom = 710.0
 label_settings = ExtResource("5_3rh7a")
 horizontal_alignment = 1
@@ -166,9 +166,9 @@ position = Vector2(1021.5, 903)
 
 [node name="SplashName" type="Label" parent="Right" unique_id=1953755512]
 light_mask = 0
-offset_left = 1232.5
+offset_left = 1230.0
 offset_top = -190.0
-offset_right = 1272.5
+offset_right = 1270.0
 offset_bottom = 711.0
 label_settings = ExtResource("5_3rh7a")
 horizontal_alignment = 1
