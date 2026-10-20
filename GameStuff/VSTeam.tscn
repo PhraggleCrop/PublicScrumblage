@@ -92,9 +92,9 @@ range_item_cull_mask = 1024
 texture = SubResource("GradientTexture2D_yaehf")
 
 [node name="SplashName" type="Label" parent="Left" unique_id=135383489]
-offset_left = 49.0
+offset_left = 54.0
 offset_top = -191.0
-offset_right = 100.0
+offset_right = 94.0
 offset_bottom = 710.0
 text = "TEAMNAME"
 label_settings = ExtResource("5_bqm6n")
