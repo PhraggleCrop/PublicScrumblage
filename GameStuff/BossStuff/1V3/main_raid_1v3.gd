@@ -396,11 +396,11 @@ func setup_stats():
 	
 	var bstatlist = get_tree().get_nodes_in_group("BStats")
 	
-	%BStatMarker.set_target(bstatlist[0].box)
-	%BStatMarker2.set_target(bstatlist[1].box)
-	%BStatMarker3.set_target(bstatlist[2].box)
+	%BStatMarker.set_target(bstatlist[player1_num].box)
+	%BStatMarker2.set_target(bstatlist[player2_num].box)
+	%BStatMarker3.set_target(bstatlist[player3_num].box)
 
-	bstatlist[3].box.visible=false
+	bstatlist[boss_num].box.visible=false
 	boss_stats.position = Vector2(-55, -115)
 	
 	boss.position = Vector2(724, 1100)
